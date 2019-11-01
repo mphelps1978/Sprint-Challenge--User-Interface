@@ -158,6 +158,8 @@ p {
     line-height: 1.4;
 }
 
+/* Universal Styling */
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -169,18 +171,29 @@ nav {
     align-items: center;
     margin-right: 40px;
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 nav a {
     text-decoration: none;
     font-weight: bold;
     color: inherit;
+    padding-top: 20px;
 }
 
 .topImage {
     padding-bottom: 30px;
     padding-top: 20px;
 }
+
+h2 {
+    font-weight: bold;
+}
+
+/* End Universal Styling */
+
+
+/* HomePage Styling */
 
 .top-content {
     display: flex;
@@ -293,4 +306,51 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* End HomePage Styling */
+
+
+/* AboutPage Styling */
+
+.about {
+    border-bottom: 1px dashed black;
+    padding-bottom: 30px;
+}
+
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.topicsBox {
+    width: 45%;
+    border-bottom: 1px dashed black;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+
+.topicsBox img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.boxButton {
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 10px 10px 5px;
+    width: 40%;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.closer {
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
