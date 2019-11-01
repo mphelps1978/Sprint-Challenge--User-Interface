@@ -1,62 +1,154 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
@@ -66,10 +158,42 @@ p {
     line-height: 1.4;
 }
 
+/* Universal Styling */
+
 .container {
     width: 800px;
     margin: 0 auto;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+    padding-top: 20px;
+}
+
+.topImage {
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/* End Universal Styling */
+
+
+/* HomePage Styling */
 
 .top-content {
     display: flex;
@@ -82,7 +206,7 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -104,12 +228,51 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box1 {
+    background: teal;
+}
+
+.box2 {
+    background: gold;
+}
+
+.box3 {
+    background: cadetblue;
+}
+
+.box4 {
+    background: coral;
+}
+
+.box5 {
+    background: crimson;
+}
+
+.box6 {
+    background: forestgreen;
+}
+
+.box7 {
+    background: darkorchid;
+}
+
+.box8 {
+    background: hotpink;
+}
+
+.box9 {
+    background: indigo;
+}
+
+.box10 {
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +306,89 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* End HomePage Styling */
+
+
+/* AboutPage Styling */
+
+.about {
+    border-bottom: 1px dashed black;
+    padding-bottom: 30px;
+}
+
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.topicsBox {
+    width: 45%;
+    border-bottom: 1px dashed black;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+
+.topicsBox img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.boxButton {
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 10px 10px 5px;
+    width: 40%;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.closer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+/* End AboutPage Styling */
+
+/* Begin ContactForm Styling */
+
+.contactForm {
+    width: 50%;
+    margin-left:70px;
+    padding-top: 20px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.formName {
+    text-align: right;
+    padding-bottom: 30px;
+}
+
+.formEmail {
+    text-align: right;
+    padding-bottom: 30px;
+}
+
+.formPhone {
+    text-align: right;
+}
+
+.submit{
+margin-left: 100px;
+}
+.formButton {
+    width: 20%;
+
 }
