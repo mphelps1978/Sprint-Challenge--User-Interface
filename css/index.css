@@ -354,3 +354,41 @@ footer nav a {
     padding-top: 30px;
     padding-bottom: 20px;
 }
+
+/* End AboutPage Styling */
+
+/* Begin ContactForm Styling */
+
+.contactForm {
+    width: 50%;
+    margin-left:70px;
+    padding-top: 20px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.formName {
+    text-align: right;
+    padding-bottom: 30px;
+}
+
+.formEmail {
+    text-align: right;
+    padding-bottom: 30px;
+}
+
+.formPhone {
+    text-align: right;
+}
+
+.submit{
+margin-left: 100px;
+}
+.formButton {
+    width: 20%;
+
+}
