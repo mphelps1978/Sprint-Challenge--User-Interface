@@ -28,9 +28,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
 ol, ul {
 	list-style: none;
 }
@@ -66,10 +63,13 @@ p {
     line-height: 1.4;
 }
 /* Above is Global. Below is your stuff. */
+body{
+    line-height:1;
+}
 .nav1 img{
     height:50px;
     display:flex;
-    width:25%;
+    width:190px;
 }
 .nav1{
     display:flex;
@@ -77,8 +77,9 @@ p {
     align-items: flex-end;
     height:70px;
     width:100%;
-    color:grey;
-
+}
+.nav1 a{
+    color:black;
 }
 .jumbo{
     width:90%;
@@ -124,7 +125,7 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box{
     width: 12.5%;
     height: 100px;
     margin: 20px 2.5%;
@@ -134,14 +135,38 @@ p {
     align-items: center;
     justify-content: center;
 }
-.box{
-}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
+#box2{
+    background-color:#FFD700;
+}
+#box3{
+    background-color:#20B2AA;
+}
+#box4{
+    background-color:#FFA07A;
+}
+#box5{
+    background-color:#DC143C;
+}
+#box6{
+    background-color:#228B22;
+}
+#box7{
+    background-color:#9400D3;
+}
+#box8{
+    background-color:#FFB6C1;
+}
+#box9{
+    background-color:#4B0082;
+}
+#box10{
+    background-color:#1E90FF;
+}
 .bottom-content .text-container {
     padding-right: 4%;
 }
@@ -154,7 +179,6 @@ footer {
     width: 100%;
     background: black;
 }
-
 footer nav {
     width: 60%;
     display: flex;
@@ -169,3 +193,43 @@ footer nav a {
     text-decoration: none;
 }
 /* Specifically the BOUT page */
+#line{
+    margin:25px;
+    width:95%;
+    border: 1px dotted black;
+}
+/* MIDDLE SECTION */
+.contentM{
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+}
+.contentM .contentM1{
+    width:50%;
+
+}
+.contentM .contentM2{
+    width:50%;
+}
+button{
+    width:170px;
+    padding:10px;
+    background-color:white;
+    margin:15px
+}
+.end{
+    height:150px;
+    display: flex;
+    flex-direction:column;
+    align-items:space-evenly;
+}
+.contentM a{
+    background-color:white;
+    text-decoration:none;
+    color: black;
+    border: 1px solid black;
+    padding:10px;
+    margin: 5px;
+}
+
+/* BOTTOM SECTION */
